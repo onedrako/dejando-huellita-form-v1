@@ -71,7 +71,7 @@
                 <input id="inputName" required>
                 
                 <label for="inputCountry">¿De que país eres? (Sí tu pais no esta, quejate con Gabito en Sugerencias en  Discord para que lo agregue)</label>
-                <input id="inputcountry" list="countries" autocomplete="country-name" required>
+                <input id="inputCountry" list="countries" autocomplete="country-name" required>
                 <datalist id="countries">
                     <option value="Argentina"></option>
                     <option value="Chile"></option>
@@ -107,9 +107,30 @@
                 <textarea name="message" id="inputMessage" cols="30" rows="10"></textarea>    
             </form>
 
-            <button type="button" onclick="">Enviar Respuestas</button>
+            <!-- <a class="form__button" href="./formDejandoHuella.html"> -->
+                <button type="button" onclick="generateImgfromform()">
+                    Enviar Respuestas
+                </button>
+            <!-- </a> -->
             <!-- <button onclick="">Enviar Respuestas</button> -->
         </section>
+
+        <section class="result">
+            <div class="result__main">
+                <div id = "countryImg">
+                    
+                </div> 
+                <h2 class="results__main--title" id="pawName"></h2>
+            </div>
+            <!-- <p id="pawName"></p> -->
+            <p id="pawCountry"></p>
+            <p id="pawDescription"></p>
+            <p id="pawDreams"></p>
+            <p id="pawGames"></p>
+            <p id="pawArrived"></p>
+            <p id="pawMessage"></p>
+        </section>
+
     </main>
     <footer>
         <div class="footer-bar">

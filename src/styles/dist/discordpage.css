@@ -85,7 +85,8 @@ main img {
 main h2 {
   font-size: 2.5rem;
 }
-.instructions {
+.instructions,
+.result {
   padding: 20px;
   margin: 20px;
   font-size: 1.25rem;
@@ -93,44 +94,53 @@ main h2 {
   background: #212525;
   border-radius: 15px;
 }
-.instructions__main {
+.instructions__main,
+.result__main {
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0px 0px 40px 0px;
 }
-.instructions__main--title {
+.instructions__main--title,
+.result__main--title {
   font-size: 3.5rem;
   text-align: center;
 }
-.instructions__main img {
+.instructions__main img,
+.result__main img {
   height: 75px;
   margin: 0px 0px 0px 0px;
 }
-.instructions__title {
+.instructions__title,
+.result__title {
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
 }
-.instructions__title--text {
+.instructions__title--text,
+.result__title--text {
   font-size: 2.5rem;
   text-align: center;
 }
-.instructions__title img {
+.instructions__title img,
+.result__title img {
   height: 50px;
   margin: 0px 5px 0px 0px;
 }
-.instructions p {
+.instructions p,
+.result p {
   margin-top: 15px;
   line-height: 15px;
 }
-.instructions ol li {
+.instructions ol li,
+.result ol li {
   margin-top: 10px;
 }
-.form {
+.form,
+.result {
   display: grid;
   min-height: 600px;
   padding: 20px;
@@ -138,42 +148,59 @@ main h2 {
   background: #212525;
   border-radius: 15px;
 }
-.form__main {
+.form__main,
+.result__main {
   margin-bottom: 20px;
   text-align: center;
 }
-.form__main img {
+.form__main img,
+.result__main img {
   height: 150px;
   margin-bottom: 15px;
 }
-.form__huella {
+.form__huella,
+.result__huella {
   text-align: start;
   font-size: 1.25rem;
   line-height: 20px;
 }
-.form__huella label {
+.form__huella label,
+.result__huella label {
   margin-bottom: 15px;
   height: 35px;
 }
-.form__huella input {
+.form__huella input,
+.result__huella input {
   margin-bottom: 15px;
   width: 100%;
   height: 30px;
   text-align: justify;
   align-items: center;
 }
-.form__huella textarea {
+.form__huella textarea,
+.result__huella textarea {
   width: 100%;
   height: 75px;
   font-size: 1.25rem;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 10px;
 }
-.form button {
+.form__huella button,
+.result__huella button {
   margin-top: 30px;
   height: 30px;
+  width: 100%;
   color: #fff;
   font-weight: bold;
   background: #171717;
   border: 1px #fff solid;
+}
+.result-main {
+  height: 100vh;
+}
+.result-main p {
+  height: fit-content;
+}
+.result {
+  max-width: 400px;
 }
