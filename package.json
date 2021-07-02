@@ -1,0 +1,16 @@
+{
+  "name": "onedrako_web",
+  "version": "1.0.0",
+  "description": "\"Page to have all the information about the twitch channel\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Gabriel <gabriel_hernandez_95@yahoo.com>",
+  "license": "MIT"
+}
