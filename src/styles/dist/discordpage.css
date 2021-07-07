@@ -6,28 +6,35 @@
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 body {
-  max-width: 425px;
+  width: 100vw;
   height: fit-content;
+  height: 100vh;
 }
 a {
   text-decoration: none;
   color: #fff;
 }
+textarea {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
 nav {
-  max-width: 100%;
+  width: 100%;
   height: 50px;
 }
 nav .nav-menu {
-  max-width: 100%;
+  width: 100%;
   height: 50px;
   color: #fff;
   background: #171717;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .nav-menu__bar {
-  max-width: 100%;
+  width: 100%;
   height: 50px;
   display: flex;
   list-style: none;
@@ -56,10 +63,10 @@ nav .nav-menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
   height: 50px;
   background: #171717;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .footer-bar__list {
   display: flex;
@@ -70,7 +77,7 @@ nav .nav-menu {
 }
 main {
   width: 100%;
-  min-height: 760px;
+  height: auto;
   background: #2b2e2e;
   display: flex;
   flex-direction: column;
@@ -85,64 +92,59 @@ main img {
 main h2 {
   font-size: 2.5rem;
 }
-.instructions,
-.result {
+.instructions {
+  width: 80%;
   padding: 20px;
   margin: 20px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: justify;
   background: #212525;
   border-radius: 15px;
 }
-.instructions__main,
-.result__main {
+.instructions__main {
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0px 0px 40px 0px;
 }
-.instructions__main--title,
-.result__main--title {
+.instructions__main--title {
   font-size: 3.5rem;
   text-align: center;
 }
-.instructions__main img,
-.result__main img {
+.instructions__main img {
   height: 75px;
   margin: 0px 0px 0px 0px;
 }
-.instructions__title,
-.result__title {
+.instructions__title {
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
 }
-.instructions__title--text,
-.result__title--text {
+.instructions__title--text {
   font-size: 2.5rem;
   text-align: center;
 }
-.instructions__title img,
-.result__title img {
+.instructions__title img {
   height: 50px;
   margin: 0px 5px 0px 0px;
 }
-.instructions p,
-.result p {
+.instructions p {
   margin-top: 15px;
   line-height: 15px;
 }
-.instructions ol li,
-.result ol li {
+.instructions ol {
+  padding: 15px;
+}
+.instructions ol li {
   margin-top: 10px;
 }
 .form,
 .result {
+  width: 80%;
   display: grid;
-  min-height: 600px;
   padding: 20px;
   margin: 20px;
   background: #212525;
@@ -161,7 +163,7 @@ main h2 {
 .form__huella,
 .result__huella {
   text-align: start;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 20px;
 }
 .form__huella label,
@@ -172,6 +174,7 @@ main h2 {
 .form__huella input,
 .result__huella input {
   margin-bottom: 15px;
+  font-size: 1.5rem;
   width: 100%;
   height: 30px;
   text-align: justify;
@@ -181,26 +184,114 @@ main h2 {
 .result__huella textarea {
   width: 100%;
   height: 75px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 10px;
+  word-wrap: break-word;
 }
-.form__huella button,
-.result__huella button {
+.form button,
+.result button {
   margin-top: 30px;
-  height: 30px;
-  width: 100%;
+  height: 35px;
+  width: 80%;
   color: #fff;
+  justify-self: center;
+  font-size: 1.5rem;
   font-weight: bold;
-  background: #171717;
+  background-color: #0e1f40;
   border: 1px #fff solid;
 }
-.result-main {
-  height: 100vh;
-}
-.result-main p {
-  height: fit-content;
+#inputName {
+  height: 30px;
 }
 .result {
-  max-width: 400px;
+  width: 80%;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content;
+  grid-template-areas: "name";
+  place-items: center;
+}
+.result h2 {
+  word-wrap: break-word;
+}
+.result p {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  line-height: 15px;
+  margin: 0;
+  word-wrap: break-word;
+  margin-top: 10px;
+}
+.result h3 {
+  line-height: 15px;
+  word-wrap: break-word;
+  font-size: 2rem;
+  margin-top: 15px;
+}
+.result__main--country {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-area: name;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "flag title";
+  text-align: center;
+  border-bottom: 1.5px solid #fff;
+}
+.result__main--country-titles {
+  display: grid;
+  grid-template-rows: auto 50px;
+  justify-content: center;
+}
+.result__text {
+  width: 100%;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-auto-rows: max-content;
+  grid-gap: 25px;
+}
+.result__text--print-result {
+  display: grid;
+  flex-direction: column;
+  width: 100%;
+  text-align: start;
+  height: auto;
+  justify-self: start;
+}
+.result__text--print-result h3 {
+  width: 100%;
+}
+.result__text--print-result p {
+  width: 100%;
+}
+#countryImg {
+  width: 100px;
+  height: 100px;
+  grid-area: flag;
+  margin: 0 auto;
+}
+#result__main--countryImg {
+  display: flex;
+  place-items: center;
+}
+#pawName {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 15px;
+}
+#pawCountry {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  margin-top: 0 aui;
+  padding-top: 20px;
 }

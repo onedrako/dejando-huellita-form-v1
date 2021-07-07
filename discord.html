@@ -45,7 +45,7 @@
             </div>
             <ol>
                 <li>NO incluyas información personal, esto va a un lugar PÚBLICO, aunque tratamos de ser buena gente, no sabes quien ande viendo por ahi, por lo que te pido no incluir ningún dato personal.</li>
-                <li>No estas obligado a llenar todos los espacios, (nombre de ususario y país por lo menos) lo que quieras compartir esta bien.</li>
+                <li>No estas obligada/obligado a llenar todos los espacios, (nombre de ususario y país por lo menos) lo que quieras compartir esta bien.</li>
                 <li>Esto lo puedes llenar (si gustas) 1 vez cada dos años, las cosas cambian según el tiempo y que te sirva tambien de recordatorio para ti. </li>
                 <li>Tomalo un poco enserio, deja buen recuerdo para la muchachada.</li>
             </ol>
@@ -66,9 +66,9 @@
             </div>
 
             <form class="form__huella" action="">
-                <label for="inputName">Nombre de usuario por el que te conocen <!-- <textarea id="inputName" required>--></label>
-                <!-- <textarea name="user" id="inputName" cols="30" rows="10"></textarea>  -->
-                <input id="inputName" required>
+                <label for="inputName">Nombre de usuario por el que te conocen (sí usas varios nombres usa saltos de linea por cada nombre) <!-- <textarea id="inputName" required>--></label>
+                <textarea name="user" id="inputName" cols="30" rows="10"></textarea> 
+                <!-- <input id="inputName" required> -->
                 
                 <label for="inputCountry">¿De que país eres? (Sí tu pais no esta, quejate con Gabito en Sugerencias en  Discord para que lo agregue)</label>
                 <input id="inputCountry" list="countries" autocomplete="country-name" required>
@@ -86,6 +86,9 @@
                     <option value="Venezuela"></option>
                 </datalist> 
     
+                <label for="inputColor">Selecciona un color</label>
+                <input type="color" name="favoriteColor" id="inputColor">
+
                 <label for="inputDescription">Descripción sobre ti, ¿qué te gusta hacer?¿a que te dedicas?¿historia?... en resumen ¿Quién eres? </label>
                 <!-- <input id ="inputDescription" type="text"> -->
                 <textarea name="description" id="inputDescription" cols="30" rows="10"></textarea> 
@@ -94,7 +97,7 @@
                 <!-- <input id="inputDreams" type="text"> -->
                 <textarea name="dreams" id="inputDreams" cols="30" rows="10"></textarea> 
     
-                <label for="inputNuevo">!Nuevo: ¿Qué juegas?, ¿Donde Juegas? (juegos y plataformas favoritas)</label>
+                <label for="inputNuevo">!Nuevo: ¿Qué juegas?, ¿Donde juegas? (juegos y plataformas favoritas)</label>
                 <!-- <input id="inputNuevo" type="text"> -->
                 <textarea name="games" id="inputNuevo" cols="30" rows="10"></textarea> 
     
@@ -109,26 +112,51 @@
 
             <!-- <a class="form__button" href="./formDejandoHuella.html"> -->
                 <button type="button" onclick="generateImgfromform()">
-                    Enviar Respuestas
+                    Generar Formato
                 </button>
             <!-- </a> -->
             <!-- <button onclick="">Enviar Respuestas</button> -->
         </section>
 
         <section class="result">
-            <div class="result__main">
-                <div id = "countryImg">
+
+            <div class="result__main--country">
+                <div id = "result__main--countryImg">
                     
-                </div> 
-                <h2 class="results__main--title" id="pawName"></h2>
+                </div>
+                <div class="result__main--country-titles">
+                    <h2 id="pawName"></h2>
+                    <p id="pawCountry"></p> 
+                </div>
             </div>
-            <!-- <p id="pawName"></p> -->
-            <p id="pawCountry"></p>
-            <p id="pawDescription"></p>
-            <p id="pawDreams"></p>
-            <p id="pawGames"></p>
-            <p id="pawArrived"></p>
-            <p id="pawMessage"></p>
+
+            <div class="result__text">
+                <div class="result__text--print-result result__text--print-description">
+                    <h3 id="titleFormDescription"></h3>
+                    <p id="pawDescription"></p>
+                </div>
+    
+                <div class="result__text--print-result result__text--print-dreams">
+                    <h3 class="result__dreams" id="titleFormDreams" ></h3>
+                    <p id="pawDreams"></p>
+                </div>
+    
+                <div class="result__text--print-result result__text--print-games">
+                    <h3 class="result__games" id="titleFormGames"></h3>
+                    <p id="pawGames"></p>
+                </div>
+    
+                <div class="result__text--print-result result__text--print-arrived">
+                    <h3 class="result__arrived" id="titleFormArrived"></h3>
+                    <p id="pawArrived"></p>
+                </div>
+    
+                <div class="result__text--print-result result__text--print-message">
+                    <h3 class="result__message" id="titleFormMessage"></h3>
+                    <p id="pawMessage"></p>
+                </div>
+            </div>
+
         </section>
 
     </main>

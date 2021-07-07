@@ -1,5 +1,5 @@
 fuente1 = 'Roboto', sans-serif
-size-font-mobile-navs = 1.25rem 
+size-font-mobile-navs = 1.5rem 
 title-size = 2.5rem
 top-margin-text = 15px
 
@@ -13,9 +13,20 @@ secondary-color = #0e1f40
 letter-color-main = #dfe3eb
 letter-color-secondary = #ffffff
 
+
+//MIXINS
+
 sizeToMobileFirst(widthSize, heightSize)
-    max-width: widthSize
+    width: widthSize
     height: heightSize
+
+pawTextFromForm()
+    display: grid
+    flex-direction: column
+    width: 100%
+    text-align: start
+
+//CSS
 
 *
     margin: 0
@@ -25,10 +36,17 @@ sizeToMobileFirst(widthSize, heightSize)
 html
     font-size: 62.5%
     font-family: fuente1
+    width: 100vw
+    height: 100vh
 
 body
-    sizeToMobileFirst(425px, fit-content)
+    sizeToMobileFirst(100vw, fit-content)
+    height: 100vh
 
 a
     text-decoration: none
     color: white
+
+textarea
+    font-size: size-font-mobile-navs
+    font-family: fuente1
