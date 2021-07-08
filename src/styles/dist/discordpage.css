@@ -8,11 +8,13 @@ html {
   font-family: 'Roboto', sans-serif;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 body {
   width: 100vw;
   height: fit-content;
   height: 100vh;
+  width: 100vw;
 }
 a {
   text-decoration: none;
@@ -67,6 +69,7 @@ nav .nav-menu {
   height: 50px;
   background: #171717;
   font-size: 1.5rem;
+  padding-right: 20px;
 }
 .footer-bar__list {
   display: flex;
@@ -201,6 +204,10 @@ main h2 {
   background-color: #0e1f40;
   border: 1px #fff solid;
 }
+.form button:hover,
+.result button:hover {
+  background: #2099d5;
+}
 #inputName {
   height: 30px;
 }
@@ -239,6 +246,21 @@ main h2 {
   border-bottom: 1.5px solid #fff;
 }
 .result__main--country-titles {
+  display: grid;
+  grid-template-rows: auto 50px;
+  justify-content: center;
+}
+.result__main--country-for-white {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-area: name;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "flag title";
+  text-align: center;
+  border-bottom: 1.5px solid #000;
+}
+.result__main--country-for-white-titles {
   display: grid;
   grid-template-rows: auto 50px;
   justify-content: center;

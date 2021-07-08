@@ -4,6 +4,7 @@
   align-items: center;
   background: background-nav-color;
   font-size: size-font-mobile-navs;
+  padding-right: 20px;
 }
 .footer-bar__list {
   display: flex;

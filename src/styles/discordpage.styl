@@ -16,6 +16,7 @@ main
         margin-top: 15px
     h2
         font-size: title-size
+    
 
 .instructions
     width: 80%
@@ -103,7 +104,9 @@ main
         // background: background-nav-color
         background-color: secondary-color
         border: 1px white solid
-    
+        &:hover
+            background: #2099d5
+    s
 #inputName
     height: 30px
 
@@ -129,6 +132,7 @@ main
     // &result-main
     h2
         word-wrap: break-word
+        // -webkit-text-stroke: .2px black;
     p
         margin-top: top-margin-text
         font-size: size-font-mobile-navs
@@ -136,11 +140,13 @@ main
         margin: 0
         word-wrap: break-word
         margin-top: 10px
+        // -webkit-text-stroke: .2px black;
     h3
         line-height: 15px
         word-wrap: break-word
         font-size: size-font-mobile-navs + 0.5rem
         margin-top: 15px
+        // -webkit-text-stroke: .2px black;
     &__main
         // height: 100px
         // width: 100px
@@ -160,6 +166,20 @@ main
                 display: grid
                 grid-template-rows: auto 50px
                 justify-content: center
+            &-for-white
+                width: 100%
+                margin: 0 auto
+                display: grid
+                grid-area: name
+                grid-template-columns: 40% 60%
+                grid-template-areas: 
+                "flag title"
+                text-align: center 
+                border-bottom: 1.5px solid black
+                &-titles
+                    display: grid
+                    grid-template-rows: auto 50px
+                    justify-content: center
     &__text
         width: 100%
         // height: 300px
@@ -175,8 +195,10 @@ main
             justify-self: start
             h3
                 width: 100%
+                // -webkit-text-stroke: 1.2px black;
             p
-                width: 100%        
+                width: 100%
+                // -webkit-text-stroke: .2px black;        
 
         // &--print-description
         //     grid-area: description
