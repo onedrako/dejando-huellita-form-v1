@@ -27,57 +27,57 @@ var generateImgfromform = function generateImgfromform() {
 
   switch (true) {
     case countryValue === "Argentina":
-      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://image.flaticon.com/icons/png/512/330/330487.png\" alt=\"\">";
+      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://i.imgur.com/JWqPPUH.png\" alt=\"\">";
       printCountryName.innerText = "de ".concat(countryValue);
       break;
 
     case countryValue === "Chile":
-      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://image.flaticon.com/icons/png/512/330/330554.png\" alt=\"\">";
+      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://i.imgur.com/i2J0U9O.png\" alt=\"\">";
       printCountryName.innerText = "de ".concat(countryValue);
       break;
 
     case countryValue === "Colombia":
-      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://image.flaticon.com/icons/png/512/330/330508.png\" alt=\"\">";
+      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://i.imgur.com/S2lg1G5.png\" alt=\"\">";
       printCountryName.innerText = "de ".concat(countryValue);
       break;
 
     case countryValue === "Ecuador":
-      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://image.flaticon.com/icons/png/512/330/330581.png\" alt=\"\">";
+      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://i.imgur.com/f17iGbR.png\" alt=\"\">";
       printCountryName.innerText = "de ".concat(countryValue);
       break;
 
     case countryValue === "El Salvador":
-      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://image.flaticon.com/icons/png/512/330/330670.png\" alt=\"\">";
+      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://i.imgur.com/2a52wwN.png\" alt=\"\">";
       printCountryName.innerText = "de ".concat(countryValue);
       break;
 
     case countryValue === "España":
-      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://image.flaticon.com/icons/png/512/330/330557.png\" alt=\"\">";
+      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://i.imgur.com/zZgUXwJ.png\" alt=\"\">";
       printCountryName.innerText = "de ".concat(countryValue);
       break;
 
     case countryValue === "Estados Unidos":
-      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://image.flaticon.com/icons/png/512/330/330459.png\" alt=\"\">";
+      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://i.imgur.com/8XL6UNE.png\" alt=\"\">";
       printCountryName.innerText = "de ".concat(countryValue);
       break;
 
     case countryValue === "Guatemala":
-      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://image.flaticon.com/icons/png/512/330/330587.png\" alt=\"\">";
+      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://i.imgur.com/wcecY8i.png\" alt=\"\">";
       printCountryName.innerText = "de ".concat(countryValue);
       break;
 
     case countryValue === "México":
-      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://image.flaticon.com/icons/png/512/330/330433.png\" alt=\"\">";
+      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://i.imgur.com/bKtXJmQ.png\" alt=\"\">";
       printCountryName.innerText = "de ".concat(countryValue);
       break;
 
     case countryValue === "Perú":
-      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://image.flaticon.com/icons/png/512/330/330497.png\" alt=\"\">";
+      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://i.imgur.com/x7FWfaK.png\" alt=\"\">";
       printCountryName.innerText = "de ".concat(countryValue);
       break;
 
     case countryValue === "Venezuela":
-      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://image.flaticon.com/icons/png/512/330/330546.png\" alt=\"\">";
+      printCountryImg.innerHTML = "<img id=\"countryImg\" src=\"https://i.imgur.com/4FThef7.png\" alt=\"\">";
       printCountryName.innerText = "de ".concat(countryValue);
       break;
   } //PARA USAR EL COLOR DE FONDO Y CAMBIO DE LETRAS
